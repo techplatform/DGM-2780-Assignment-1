@@ -1,0 +1,334 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+header {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+div.mainH3 {
+        text-align: center;
+    padding: 5rem 12rem 3rem 5rem;
+        background-color: pink;
+}
+
+
+
+.left {
+    float: left;
+    color: black;
+    font-size: 25px;
+}
+
+.left p {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.right {
+    float: right;
+    color: red;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    color: black;
+    margin-left: 20px;
+}
+.right a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: darkslategrey;
+    text-align: center;
+    text-decoration: none;
+}
+.right a:hover {background-color: #444;}
+
+.clear {
+    clear: both;
+}
+
+main{display: block; padding: 1rem 2%;}
+main h1 {color: #17a8e4;}
+
+
+main figure img {width: 100%;}
+main figure {
+    margin: 0;
+    margin-right: -2%;
+    width: 100%;
+    
+}
+main figcaption {text-align: center; font-size: .8rem;}
+
+.button {
+  background-color: #FB7852;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 150px;
+  cursor: pointer;
+  
+}
+
+
+div.midpoint{
+    text-align: center;
+    padding: 4rem 10rem 4rem 10rem;
+}
+
+div.midpoints{
+    text-align: center;
+    padding: 1rem;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+    padding-bottom: 50px;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+
+/* ------ Medium screen------ */
+
+@media only screen and (min-width: 560px) {
+    nav li {width: 25%; float: left;}
+    
+    
+div.mainH1 {
+    padding: 0rem 12rem 1rem 1rem;
+}
+
+    div.mainH2 {
+    padding: 0rem 1rem 1rem 21.5rem;
+}
+
+ div.mainH3 {
+        text-align: center;
+    padding: 5rem 12rem 3rem 5rem;
+        background-color: pink;
+}
+    div.midpoint{
+    text-align: center;
+    padding: 2rem 10rem 4rem 10rem;
+}
+    
+    div.midpoint2{
+    text-align: center;
+    padding: 4rem 10rem 7rem 10rem;
+}
+
+    main figure {
+        float: right; 
+        width: 48%; 
+        margin-left: 2%;
+        padding-bottom: .5rem;
+        margin-right: -2%;
+    }
+    
+    .bottom {
+        float: left; 
+        width: 48%; 
+        margin-left: -2%;
+        padding-bottom: .5rem;
+    }
+    
+    div.news {
+        clear: both;
+        column-count: 2;
+        column-rule: 1px solid #ddd;
+    }
+    
+    .button1 {
+        background-color: #FB7852;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 70px;
+        cursor: pointer;
+  
+    }
+    
+    .button2 {
+        background-color: white;
+        border-radius: 12px;
+        border: none;
+        color: #FB7852;
+        padding: 10px 90px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 9px 0px 60px;
+        cursor: pointer;
+        border: 3px solid #FB7852;
+    }
+    
+    .button3 {
+        background-color: #FB7852;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+  
+    }
+    
+    
+} /* end of media query */
+
+/* ------ Medium screen------ */
+
+
+
+/* ------ Large screen------ */
+
+@media only screen and (min-width: 1024px) {
+    
+    header, nav, main, footer {
+        max-width: 1200px;
+        margin:auto;
+    }
+    
+    div.mainH1 {
+    padding: 0rem 12rem 5rem 1rem;
+}
+    div.mainH2 {
+    padding: 3rem 0 5rem 35rem;
+}
+    div.mainH3 {
+        text-align: center;
+        padding: 5rem 12rem 3rem 5rem;
+        background-color: pink;
+}
+    
+    nav {
+        align-items: left;
+    }
+    
+    nav ul {padding-left: 2%;}
+    nav li {width:auto;}
+    nav a {padding: .5rem 1rem;}
+    
+    main figure { width: 48%;
+    margin-right: -2.7%;
+    }
+    
+    div.midpoint{
+    text-align: center;
+    padding: 1rem 10rem 4rem 10rem;
+}
+    
+    div.midpoint2{
+    text-align: center;
+    padding: 4rem 10rem 7rem 10rem;
+}
+    
+    .bottom {
+        float: left; 
+        width: 48%; 
+        margin-left: -2%;
+        padding-bottom: .5rem;
+    }
+    
+    
+    .button1 {
+        background-color: #FB7852;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 50px 150px;
+        cursor: pointer; 
+    }
+    
+    .button3 {
+        background-color: #FB7852;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 15px;
+        cursor: pointer; 
+    }
+    
+    div.news {column-count: 3;
+}
+   
+    
+} /* end of media query */
+
+/* ------ Large screen------ */
+
+    footer {
+    background-color:#003366;
+    margin:-3rem;
+    text-align: center;
+    height: 39.3vh;
+}
+
+.footer{
+    padding-top: 20%;
+    padding-left: 5%;
+}
+
+.ending{
+        float: right; 
+        margin-left: 2%;
+        margin-right: 7%;
+        height:inherit;
+        width:44.15vh;
+    }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
